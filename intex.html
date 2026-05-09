@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> السيرة الذاتية | أحمد أسامه سعد زغلول</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --bg-light: #f4f7f6;
+            --text-dark: #2c3e50;
+            --text-gray: #7f8c8d;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .cv-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--white);
+            display: flex;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            overflow: hidden;
+            min-height: 1000px;
+        }
+
+        /* Sidebar - Right Side for RTL */
+        .sidebar {
+            width: 32%;
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 40px 25px;
+        }
+
+        .profile-img-container {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid var(--secondary-color);
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+            background-color: #eee;
+        }
+
+        .profile-section {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .profile-section h1 {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+            color: var(--secondary-color);
+            line-height: 1.2;
+        }
+
+        .profile-section p {
+            font-size: 0.95rem;
+            opacity: 0.8;
+        }
+
+        .info-title {
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 5px;
+            margin: 30px 0 15px;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .contact-link {
+            display: block;
+            color: var(--white);
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+            text-decoration: none;
+        }
+
+        .skill-item { margin-bottom: 18px; }
+        .skill-name { font-size: 0.85rem; display: block; margin-bottom: 6px; }
+        .skill-bar { background: rgba(255,255,255,0.1); height: 8px; border-radius: 4px; }
+        .skill-per { background: var(--secondary-color); height: 100%; border-radius: 4px; }
+
+        /* Main Content - Left Side */
+        .main-content {
+            width: 68%;
+            padding: 50px;
+        }
+
+        section { margin-bottom: 35px; }
+
+        h2 {
+            color: var(--primary-color);
+            border-right: 6px solid var(--secondary-color);
+            padding-right: 15px;
+            margin-bottom: 25px;
+            font-size: 1.4rem;
+            background: #f9f9f9;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .summary-text {
+            color: var(--text-gray);
+            font-size: 1rem;
+            text-align: justify;
+            line-height: 1.8;
+        }
+
+        .exp-item { margin-bottom: 25px; }
+        .exp-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+        .company { font-weight: bold; color: var(--secondary-color); font-size: 1.1rem; }
+        .date { font-size: 0.85rem; color: var(--text-gray); background: #eee; padding: 4px 12px; border-radius: 20px; }
+        .job-title { font-weight: bold; margin-bottom: 10px; display: block; color: var(--primary-color); }
+
+        .exp-list { list-style: none; padding-right: 15px; }
+        .exp-list li { font-size: 0.95rem; color: var(--text-gray); margin-bottom: 10px; position: relative; }
+        .exp-list li::before { content: "•"; color: var(--secondary-color); margin-left: 10px; font-weight: bold; font-size: 1.2rem; }
+
+        @media (max-width: 850px) {
+            .cv-container { flex-direction: column; }
+            .sidebar, .main-content { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cv-container">
+        <aside class="sidebar">
+            <div class="profile-img-container">
+                <img src="my-photo.jpg" alt="صورة أحمد أسامه" class="profile-img">
+            </div>
+            
+            <div class="profile-section">
+                <h1>أحمد أسامه سعد</h1>
+                <p>أمين مخزن قطع غيار صيانة</p>
+            </div>
+
+            <div class="info-title">بيانات الاتصال</div>
+            <div class="contact-link">📍 القليوبية، مصر</div>
+            <div class="contact-link">📞 01095868955</div>
+            <div class="contact-link">✉️ ahmed.osama@example.com</div>
+
+            <div class="info-title">المهارات التقنية</div>
+            <div class="skill-item">
+                <span class="skill-name">نظام SAP (إدارة المخازن)</span>
+                <div class="skill-bar"><div class="skill-per" style="width: 95%;"></div></div>
+            </div>
+            <div class="skill-item">
+                <span class="skill-name">Microsoft Excel</span>
+                <div class="skill-bar"><div class="skill-per" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill-item">
+                <span class="skill-name">اللغة الإنجليزية</span>
+                <div class="skill-bar"><div class="skill-per" style="width: 80%;"></div></div>
+            </div>
+
+            <div class="info-title">المهارات الشخصية</div>
+            <p style="font-size: 0.9rem; opacity: 0.9; line-height: 2.2;">
+                • الدقة وقوة الملاحظة <br>
+                • حل المشكلات والمرونة <br>
+                • العمل الجماعي والتنسيق <br>
+                • إدارة الوقت والأولويات
+            </p>
+        </aside>
+
+        <main class="main-content">
+            <section>
+                <h2>الملخص المهني</h2>
+                <p class="summary-text">أمين مخزن قطع غيار ذو خبرة تمتد لأكثر من 8 سنوات في إدارة المخازن الفنية بشركة العربي للمنظومات والحلول التكنولوجية. ماهر في استخدام نظام SAP وبرامج Microsoft Excel لتنظيم البيانات بدقة. أمتلك مهارات تنظيمية عالية وقدرة على العمل تحت ضغط مع الالتزام التام بمعايير الجودة.</p>
+            </section>
+
+            <section>
+                <h2>الخبرة العملية</h2>
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <span class="company">مجموعة العربي (المنظومات والحلول)</span>
+                        <span class="date">2018 - الآن</span>
+                    </div>
+                    <span class="job-title">أمين مخزن قطع غيار صيانة</span>
+                    <ul class="exp-list">
+                        <li>إدارة واستلام وصرف قطع غيار الصيانة بدقة عالية.</li>
+                        <li>معالجة البيانات عبر نظام SAP لضمان دقة الأرصدة المخزنية.</li>
+                        <li>تنظيم المخازن وفقاً لمعايير السلامة المهنية العالمية.</li>
+                        <li>إعداد تقارير الجرد الدورية باستخدام Excel المتقدم.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>التعليم</h2>
+                <p style="font-weight: bold;">جامعه عين شمس - كليه التربيه / تكنولوجيا التعليم الرقمى</p>
+                <p style="color: var(--text-gray);">نظام التعليم المدمج - دفعة 2023</p>
+            </section>
+
+            <section>
+                <h2>اللغات</h2>
+                <p style="font-size: 1rem; color: var(--text-gray);">
+                    <strong>العربية:</strong> اللغة الأم (ممتاز) <br>
+                    <strong>الإنجليزية:</strong> مستوى جيد جداً
+                </p>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
